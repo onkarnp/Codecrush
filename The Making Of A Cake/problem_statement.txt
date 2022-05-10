@@ -1,0 +1,26 @@
+Problem Statement:
+The owner of Safa Bakery has received an order from the President of Mithai country for his son's birthday cake. The president is a person of very high temper and the owner doesn't want to tick him him, so he had to prepare a cake exactly as described by the President's son. He asked for a cake with N layers and each layer has to be of a type specified by him. The type of layer is represented by a lowercase letter from the English alphabet.
+
+The owner asked his expert baker, Jalebi Bai, to make this cake, who was very sleepy due to a very long and tiring journey to a planet far far away earlier. Due to tiredness, Jalebi Bai screwed up the the layers while baking the cake. Thankfully, it has the same number of layers as required, but any of the layers may or may not be the same as described in the order. The owner is really worried because of this, as making a new cake will cost him a huge amount of money.
+
+At this point of time, Samosa Bhai comes to the rescue. He has a layer swapper (patent pending) which can swap the layers of a cake without ruining the cake. This swapper has a limitation that it can swap layers separated exactly by distance D only, meaning there should be exactly D-1 layers in between the two layers to be swapped.
+
+You have to tell if the cake made by Jalebi Bai can be changed into the cake described by the President's son using Samosa Bhai's swapper.
+
+
+Input Format:
+The first line contains T, the number of test cases.
+The first line of each test case contains N and D.
+The next line contains a lowercase string A representing the cake described by the President's son.
+The next line contains a lowercase string B representing the cake made by Jalebi Bai.
+
+Constraints:
+1 ≤ T ≤ 20000
+1 ≤ N ≤ 10^5
+1 ≤ D ≤ 10^5
+Size of String A = Size of String B = N
+1 ≤ Sum of N ≤ 10^5
+All characters are from 'a' to 'z' in string A and B.
+
+Output Format:
+For each test case, output "Yes" (without quotes) if it is possible to transform the cake B into cake A using the layer swapper. Otherwise, output "No" (without quotes).

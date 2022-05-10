@@ -1,0 +1,12 @@
+Problem Statement:
+Jenny has a data of the brand values of her company weekwise from the start. and she is so optimistic about the future of her company brand and wanted her company brand value to grow. She've asked you, the newly appointed head data analyst of the company to interprate the data and predict about the company brand value in the future. You've been told by previous analyst that the week no. and brand value has an unique relation. now, your job is to find it out and predict for the company's future. Produce Output by finding relation ,according to sample input & output .
+
+Input Format:
+First line contains an integer n ,(may be no. of testcases)
+Next n lines contains space seperated n integers (probably week no.).
+
+Constraints:
+0<=n<=10000
+
+Ouput Format:
+n integers/long integers each on a new line.

@@ -1,0 +1,51 @@
+Notorious Binod :)
+
+Approach-
+The problem consists a special type of series in mathematics popularly known as 'Recaman's Sequence'. 
+The sequence defined by a recurrence relation, because its elements are related to the previous elements in a straightforward way, they are often defined using recursion.
+For avoiding delay in processing due to recursion one may use array data structure in order to take referance for finding the next element of the series.
+Please remember that the position starts from 1 and not 0, whereas the series starts from the 0 index.
+
+The solution code goes as follows-
+
+#include<iostream>
+
+using namespace std;
+void recaman(int n)                      //function to get output from  the recaman's sequence
+{
+    int arr[n];
+    arr[0] = 0;
+    for (int i=1; i< n; i++)
+    {
+        int curr = arr[i-1] - i;
+        int j;
+        for (j = 0; j < i; j++)
+        {
+            if ((arr[j] == curr) || curr < 0)
+            {
+                curr = arr[i-1] + i;
+                break;
+            }
+        }
+
+        arr[i] = curr;
+    }
+    cout<<arr[n-1]<<"\n";
+}
+
+// Driver code
+int main()
+{
+    int n;
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    for(int i=0;i<n;i++)
+    {
+        recaman(a[i]);
+    }
+    return 0;
+}

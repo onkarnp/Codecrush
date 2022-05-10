@@ -1,0 +1,16 @@
+Problem Statement: 
+John is a very bubbly personality. He loves spreading happiness. All the kids in society likes him because he gives them chocolates. But he'll never give you for free. he'll give you a question and the answer of it will be the chocolates won by you. Today Jerry has got a weird and interesting question. He is given an integer sequence A with length N. And he has to find the number of Ordered Pairs of positive integers (a,b) such that a occurs in A at least b times and b occurs in A at least a times. Find out the maximum no. of chocolates he will get if he could solve the problem correctly.
+
+Input Format: 
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains a single integer N.
+The second line contains N space-separated integers A1,A2,…,AN.
+
+Constraints:
+1≤T≤1000
+2≤N≤10^6
+1≤Ai≤10^6 for each valid i
+the sum of N over all test cases does not exceed 3⋅10^6
+
+Output Format:
+For each test case, print a single line containing one integer — the number of pairs.

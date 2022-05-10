@@ -1,0 +1,49 @@
+Find the Book
+
+Approach-
+The problem is based on the concept of Arithmatic progression and Arithmatic sum. Tony has got three entities in the each testcase. d,t,total respectively.
+He have to go in the library for 1 min at the starting and search for the required book. then he has to come back and again go in for 1+d minutes and the same sequence continuous.
+while going in he has to take care that his time i.e. 1+(x)d should not cross the time limit (t). and one more thing given is total time required for searching the book. If the sum of the A.P. from time=1 to
+ time<= t could reach or exceed total time ,Tony would manage to find the book.
+i.e. in mathematical terms-
+if,         {1 + (1+d) + (1+2d) + (1+3d).....(1+(x)d<=t)} >= total            //He will find the book otherwise NO
+
+Solution Code-
+
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+int main(void) {
+    long long int T;
+    cin>>T;
+    while(T--)
+    {
+        long long int t,d,total;
+        long long int sum=0,i=0,y;
+        cin>>d>>t>>total;
+        while(1)
+        {
+          y=1+i*d;
+          if(y<=t)
+          {
+              sum+=y;
+              i++;
+          }
+          else
+              break;
+        }
+        if(sum>=total)
+            printf("Yes\n");
+        else
+            printf("No\n");
+    }
+    return 0;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+Problem Statement:
+Raghav is a naughty guy. He lives with his father. Sometimes his father gets irritated with his behaviour and gives riddles and some problems to keep him always busy. Today he has given him a series. A funny series which starts with zero '0' and follows a unique routine as follows-
+<!Insert image here>
+His father has given him a set of numbers and he have to find out the respective number at that position in the series. (if number is 1 => 1st element in the series). Help him out to get the done with the task.
+
+Input Format:
+First line contains number of testcases. (T)
+The next set of lines contains set of no.s each at new line showing position of the number to be found.
+
+Constraints:
+1<=T<=10^3
+1<=Position of the number<=10^3
+
+Output Format:
+The number present at respective position each at new line.

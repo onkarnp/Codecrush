@@ -1,0 +1,16 @@
+Problem Statement:
+Tony is in search of a book of ancient magics called 'Mantra' which is kept in the archieve library of the History Department of the city. After lot of requests and applications done, he is given a chance to visit the archieve library but with a condition.
+For finding the book he have to visit inside a vault which contains all of Ancient books. Tony could search the book first for 1 min and then for 1+d,1+2d and so on. It is given that in any of the searches he cannot exceed his time by (t) minutes. He knows the total time (total) he has for searching. Since his mathematics is not that strong therefore he asked for your help. You have to tell whether he will be able to find the book in atleast total time or not.
+
+Input Format:
+First line contains the number of testcases(T).
+Each line of testcase contains 3 integers d , t and total.
+
+Constraints:
+1<=T<=10^5
+1<=t<=10^5
+1<=d<=10^5
+1<=total<=10^5
+
+Output Format:
+For each testcase print 'Yes' if he will be able to find the book in time else print 'No' in a new line (without quotes).
